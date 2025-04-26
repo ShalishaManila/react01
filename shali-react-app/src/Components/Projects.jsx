@@ -35,14 +35,17 @@ function Projects() {
     },
   ];
   return (
-    <div className="container-fluid d-flex justify-content-center">
-      <div className="row">
-        {myProjects.map((myProject) => (
-          <div className="col-md-4">
-            <Project key={myProject.name} myProject={myProject} />
-          </div>
-        ))}
-        ;
+    <div className="text-center">
+      <h1 class="display-6 fw-bold text-secondary">My Learning Journey</h1>
+      <div className="container-fluid d-flex justify-content-center">
+        <div className="row">
+          {myProjects.map((myProject) => (
+            <div className="col-md-4">
+              <Project key={myProject.name} myProject={myProject} />
+            </div>
+          ))}
+          ;
+        </div>
       </div>
     </div>
   );
