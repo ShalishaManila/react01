@@ -1,10 +1,8 @@
-import { useState } from "react";
-
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import svgproject from "../assets/images/svg-project.jpg";
 import bootstrapproject from "../assets/images/bootstrap-project.jpg";
 import groupproject from "../assets/images/group-project.jpg";
 
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Project from "./Project.jsx";
 
 function Projects() {
@@ -35,19 +33,19 @@ function Projects() {
     },
   ];
   return (
-    <div className="text-center">
-      <h1 class="display-6 fw-bold text-secondary">My Learning Journey</h1>
-      <div className="container-fluid d-flex justify-content-center">
-        <div className="row">
-          {myProjects.map((myProject) => (
-            <div className="col-md-4">
+    <>
+      <div className="text-center">
+        <h1 className="fw-bold text-secondary">Some of my Projects!!!</h1>
+        <div className="container-fluid d-flex justify-content-center">
+          <div className="row">
+            {myProjects.map((myProject) => (
               <Project key={myProject.name} myProject={myProject} />
-            </div>
-          ))}
-          ;
+            ))}
+            ;
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Projects;

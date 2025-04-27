@@ -1,13 +1,16 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .card {
   height: 40rem;
 }
-
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 253) !important;
 }
-
-img{
-    object-fit: scale-down;
-    width:20rem;
-    height:20rem;
+img {
+  object-fit: scale-down;
+  width: 20rem;
+  height: 20rem;
 }
