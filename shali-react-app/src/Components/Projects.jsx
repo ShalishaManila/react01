@@ -8,6 +8,7 @@ import Project from "./Project.jsx";
 function Projects() {
   const myProjects = [
     {
+      id:1,
       name: "SVG",
       techs: ["css", "html", "graphics"],
       screenshot: svgproject,
@@ -16,6 +17,7 @@ function Projects() {
       giturl: "https://github.com/ShalishaManila/ITTFW6",
     },
     {
+      id:2,
       name: "Bootstrap",
       techs: ["css", "html", "js", "graphics"],
       screenshot: bootstrapproject,
@@ -24,6 +26,7 @@ function Projects() {
       giturl: "https://github.com/ShalishaManila/ITTFW11",
     },
     {
+      id:3,
       name: "Group Project",
       techs: ["css", "html", "graphics"],
       screenshot: groupproject,
