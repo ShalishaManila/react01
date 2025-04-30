@@ -24,6 +24,6 @@ function Portfolio() {
       </div>
       {display ? <Projects /> : ""}
     </>
-  );
+  )
 }
 export default Portfolio;

@@ -38,17 +38,16 @@ function Projects() {
   return (
     <>
       <div className="text-center">
-        <h1 className="fw-bold text-secondary">Some of my Projects!!!</h1>
+        <h1 className="fw-bold text-secondary">My Projects!!!</h1>
         <div className="container-fluid d-flex justify-content-center">
           <div className="row">
             {myProjects.map((myProject) => (
               <Project key={myProject.name} myProject={myProject} />
             ))}
-            ;
           </div>
         </div>
       </div>
     </>
-  );
+  )
 }
 export default Projects;
