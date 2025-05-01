@@ -1,11 +1,13 @@
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import {Nav, Navbar} from "react-bootstrap";
+
 import { Routes, Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import Test from './components/Test.jsx';
+import Search from './components/Search.jsx';
 
 function MyNavbar() {
   return (
@@ -37,6 +39,12 @@ function MyNavbar() {
                 <Nav.Link as={Link} to="/about">
                   About
                 </Nav.Link>
+                <Nav.Link as={Link} to="/test">
+                  Test
+                </Nav.Link>
+                <Nav.Link as={Link} to="/search">
+                  Search
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -48,6 +56,8 @@ function MyNavbar() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/test" element={<Test />} />
+            <Route path="/search" element={<Search />} />
             <Route
               render={function () {
                 return <p>Not found</p>;

@@ -4,7 +4,8 @@ body {
   padding: 0 20px;
 }
 .card {
-  height: 40rem;
+  height: 31rem;
+  margin: 5px;
 }
 .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 253) !important;
